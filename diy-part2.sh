@@ -24,5 +24,3 @@ git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
 # 更换5.4内核为5.10
 #sed -i "s/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g" target/linux/ramips/Makefile
-
-rm -rf feeds/packages/net/adguardhome
