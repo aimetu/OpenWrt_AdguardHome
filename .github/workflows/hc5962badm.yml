@@ -74,14 +74,6 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: delete package
-      id: delete
-      run: |
-        cd openwrt
-        sudo rm -rf feeds/packages/net/smartdns
-        sudo rm -rf feeds/packages/net/mosdns
-        sudo rm -rf feeds/packages/net/adguardhome
-
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
